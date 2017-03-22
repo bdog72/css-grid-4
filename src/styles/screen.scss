@@ -9,6 +9,36 @@ html {
 
 body {
   @include font-smoothing(on);
-  margin: 0;
+
+  margin: 40px;
   font: $base-text-size / 1 $base-font-family;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px;
+  grid-gap: 5px;
+}
+
+.wrap div {
+  background-color: rgb(40, 68, 215);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.wrap1 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px;
+  grid-gap: 5px;
+}
+
+.wrap1 div {
+  background-color: rgb(222, 32, 129);
+  padding: 20px;
+  color: white;
 }
